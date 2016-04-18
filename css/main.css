@@ -74,16 +74,33 @@ a {
   position: relative;
 }
 
+.banner-content {
+  position: absolute;
+  top: 4.5em;
+  left: 0;
+}
+
 h3 {
   font-family: "How Bold";
-  font-size: 2rem;
+  font-size: 1.8rem;
   padding-top: 15px;
+  text-align: center;
 }
 
 .menu-card {
   display: inline-block;
+  margin: 1em;
 }
 
 .allergy-card {
+  display: inline-block;
+  float: right;
+}
+
+.review-card {
+  display: block;
+}
+
+.location-card {
   display: inline-block;
 }
