@@ -65,8 +65,9 @@ p {
 
 a {
   font-family: "Futura";
-  background-color: grey;
   padding: 10px;
+  border-radius: 1em;
+  border-style: groove;;
 }
 
 .img-banner {
@@ -83,24 +84,78 @@ a {
 h3 {
   font-family: "How Bold";
   font-size: 1.8rem;
-  padding-top: 15px;
   text-align: center;
 }
 
 .menu-card {
   display: inline-block;
-  margin: 1em;
+  position: relative;
+  width: 49%;
+}
+
+.menu-card div {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.img-menu {
+  width: 100%;
+  position: relative;
 }
 
 .allergy-card {
   display: inline-block;
-  float: right;
+  position: relative;
+  width: 49%;
+}
+
+.allergy-card div {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.img-allergy {
+  width: 100%;
 }
 
 .review-card {
-  display: block;
+  display: inline-block;
+  position: relative;
+  width: 49%;
+}
+
+.review-card div {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.img-review {
+  width: 100%
 }
 
 .location-card {
   display: inline-block;
+  position: relative;
+  width: 49%;
+}
+
+.location-card div {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.img-location {
+  width: 100%;
+}
+
+h4 {
+  text-align: center;
 }
