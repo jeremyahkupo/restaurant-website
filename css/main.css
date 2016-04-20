@@ -58,7 +58,7 @@ p {
   font-family: "Futura"
   font-weight: 400;
   font-style: normal;
-  margin-top: -30px;
+  margin-top: -10px;
   font-weight: lighter;
   position: relative;
 }
@@ -67,7 +67,11 @@ a {
   font-family: "Futura";
   padding: 10px;
   border-radius: 1em;
-  border-style: groove;;
+  border-style: groove;
+}
+
+a:hover {
+  background-color: red;
 }
 
 .img-banner {
@@ -78,7 +82,9 @@ a {
 .banner-content {
   position: absolute;
   top: 4.5em;
-  left: 0;
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1.8rem;
 }
 
 h3 {
@@ -90,7 +96,8 @@ h3 {
 .menu-card {
   display: inline-block;
   position: relative;
-  width: 49%;
+  float: left;
+  width: 50%;
 }
 
 .menu-card div {
@@ -108,7 +115,8 @@ h3 {
 .allergy-card {
   display: inline-block;
   position: relative;
-  width: 49%;
+  float: left;
+  width: 50%;
 }
 
 .allergy-card div {
@@ -125,7 +133,8 @@ h3 {
 .review-card {
   display: inline-block;
   position: relative;
-  width: 49%;
+  float: left;
+  width: 50%;
 }
 
 .review-card div {
@@ -142,7 +151,8 @@ h3 {
 .location-card {
   display: inline-block;
   position: relative;
-  width: 49%;
+  float: left;
+  width: 50%;
 }
 
 .location-card div {
@@ -158,4 +168,98 @@ h3 {
 
 h4 {
   text-align: center;
+}
+
+.menu-section {
+  position: relative;
+}
+
+.img-menu-sec {
+  width: 100%;
+  position: relative;
+}
+
+.menu-card-text {
+  position: absolute;
+  top: 0;
+}
+
+.menu-sec {
+  clear: both;
+}
+
+.menu-card-text p {
+  left: 5px
+}
+
+.allergy-section {
+  position: relative;
+}
+
+.img-allergy-sec {
+  width: 100%;
+  position: relative;
+}
+
+.allergy-card-text {
+  position: absolute;
+  top: 0;
+}
+
+.allergy-sec {
+  clear: both;
+}
+
+.allergy-card-text p {
+  left: 5px;
+}
+
+.review-section {
+  position: relative;
+}
+
+.img-review-sec {
+  width: 100%;
+  position: relative;
+}
+
+.review-card-text {
+  position: absolute;
+  top: 0;
+}
+
+.img-review-box {
+  position: absolute;
+  top: 28px;
+  right: 0;
+  width: 50%;
+}
+
+.review-sec {
+  clear: both;
+}
+
+.location-section {
+  position: relative;
+}
+
+.img-location-sec {
+  width: 100%;
+  position: relative;
+}
+
+.location-card-text {
+  position: absolute;
+  top: 0;
+}
+
+.img-location-box {
+  position: absolute;
+  top: 28px;
+  right: 0;
+  width: 50%;
+}
+
+.location-sec {
+  clear: both;
 }
