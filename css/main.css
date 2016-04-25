@@ -20,7 +20,7 @@ html {
 h1 {
   font-family: "Pacifico";
   font-size: 1.5rem;
-  text-align: left;
+  text-align: center;
 }
 
 .img-logo {
@@ -271,5 +271,8 @@ h4 {
 @media only screen and (min-width: 25em) {
   .menu-card {
     display: block;
+  }
+  h1 {
+    text-align: left;
   }
 }
