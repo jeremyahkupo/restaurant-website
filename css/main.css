@@ -17,10 +17,23 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  margin: 0;
+}
+
+header {
+  background-color: #819466;
+  padding: .2rem;
+  margin: 0;
+  display: block;
+}
+
 h1 {
   font-family: "Pacifico";
   font-size: 1.5rem;
   text-align: center;
+  color: #fff;
+  padding-left: 1rem;
 }
 
 .img-logo {
@@ -28,13 +41,14 @@ h1 {
   width: 35px;
   left: 7.4px;
   top: 7.4px;
+  display: none;
 }
 
 .img-nav {
   position: absolute;
   width: 30px;
-  right: 10px;
-  top: 10px;
+  right: 20px;
+  top: 20px;
 }
 
 .banner {
@@ -43,10 +57,22 @@ h1 {
   float: left;
 }
 
+.img-banner2 {
+  display: none;
+  width: 100%;
+}
+
+.banner div {
+  position: absolute;
+  left: 30%;
+  top: 20%;
+  transform: translate(-30%, -30%);
+}
+
 h2 {
   font-family: "Pacifico";
   font-size: 2.7rem;
-  padding-top: 15px;
+  padding-top: 10px;
 }
 
 u {
@@ -57,9 +83,8 @@ u {
 p {
   font-weight: 400;
   font-style: normal;
-  margin-top: -10px;
   font-weight: lighter;
-  position: relative;
+  text-align: center;
 }
 
 a {
@@ -238,7 +263,7 @@ h4 {
 }
 
 .review-card-text a {
-  font-family: "How Bold";
+  font-family: "Amatic SC";
   border-radius: 0em;
   border: 0em;
 }
@@ -268,9 +293,42 @@ h4 {
   clear: both;
 }
 
+footer {
+  background-color: #D3D3D3;
+}
+
 @media only screen and (min-width: 25em) {
   .menu-card {
     display: block;
+  }
+  h1 {
+    text-align: center;
+  }
+  .img-banner {
+    display: none;
+    float: left;
+  }
+  .img-banner2 {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 38em) {
+  .menu-card{
+    display: inline;
+    width: 50%
+  }
+  .allergy-card {
+    display: inline;
+  }
+  .review-card {
+    display: inline;
+  }
+  .location-card {
+    display: inline;
+  }
+  .img-nav {
+    visibility: hidden;
   }
   h1 {
     text-align: left;
