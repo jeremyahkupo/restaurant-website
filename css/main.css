@@ -34,8 +34,12 @@ header {
   background-color: #000;
 }
 
-.header-list li {
-  display: inline-block;
+.header-list-ul {
+  list-style-type: none;
+}
+
+.header-list {
+  text-decoration: none;
 }
 
 h1 {
@@ -98,7 +102,7 @@ a {
   border-radius: 1em;
   border-style: groove;
   text-decoration: none;
-  color: #000;
+  color: #fff;
 }
 
 a:hover {
@@ -328,6 +332,10 @@ footer {
   h1 {
     text-align: center;
   }
+
+  .header-list {
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 38em) {
@@ -360,6 +368,21 @@ footer {
 
   h1 {
     text-align: left;
+    display: inline-block;
+  }
+
+  .header-list li {
+    display: inline-block;
+  }
+
+  .header-list {
+    display: inline-block;
+    text-align: right;
+    position: static;
+    width: 73%;
+    float: right;
+    padding-top: 5px;
+    padding-right: 10px;
   }
 }
 
@@ -367,7 +390,14 @@ footer {
 
   html {
     font-size: 120%;
-    line-height: 1.5%
+    line-height: 1.5;
+  }
+
+  .banner-content {
+    top: 4.5em;
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1.8rem;
   }
 }
 
