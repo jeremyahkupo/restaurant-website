@@ -29,25 +29,65 @@ header {
   display: block;
 }
 
+.header-list {
+  text-align: center;
+  padding-right: 2rem;
+  line-height: 200%;
+}
+
 .header-list a:hover {
   color: #fff;
-  background-color: #000;
+  background-color: #697754;
 }
 
-.header-list-ul {
+.header-list-nav {
   list-style-type: none;
+  display: none;
 }
 
-.header-list {
-  text-decoration: none;
+.nav-check {
+  position: absolute;
+  top: -3em;
 }
+
+.nav-check:checked ~ .header-list-nav {
+  display: block;
+}
+
+.nav-label {
+  cursor: pointer;
+  font-size: 1.25rem;
+  display: inline-block;
+  width: 5%;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.nav-open,
+.nav-close {
+  display: block;
+  width: 100%;
+}
+
+.nav-close {
+  display: none;
+}
+
+.nav-check:checked ~ .nav-label .nav-open {
+  display: none;
+}
+
+.nav-check:checked ~ .nav-label .nav-close {
+  display: block;
+}
+
 
 h1 {
   font-family: "Pacifico";
   font-size: 1.5rem;
   text-align: center;
   color: #fff;
-  padding-left: 1rem;
 }
 
 .img-logo {
@@ -63,6 +103,7 @@ h1 {
   width: 30px;
   right: 20px;
   top: 20px;
+  display: none;
 }
 
 .banner {
@@ -99,8 +140,9 @@ p {
 
 a {
   padding: 10px;
-  border-radius: 1em;
-  border-style: groove;
+  border-radius: .8em;
+  border-style: solid;
+  border-color: #697754;
   text-decoration: none;
   color: #fff;
 }
@@ -282,8 +324,11 @@ h4 {
   clear: both;
 }
 
-.review-card-text a {
-  font-family: "Amatic SC";
+
+.img-review-box {
+  width: 70%;
+  top: 57px;
+  left: 10px;
 }
 
 .location-section {
@@ -334,7 +379,7 @@ footer {
   }
 
   .header-list {
-    display: none;
+    display: block;
   }
 }
 
@@ -367,22 +412,28 @@ footer {
   }
 
   h1 {
-    text-align: left;
     display: inline-block;
+    left: 10px;
   }
 
   .header-list li {
     display: inline-block;
   }
 
-  .header-list {
+  .nav-open,
+  .nav-close {
+    display: none;
+    float: left;
+  }
+
+  .header-list-nav {
     display: inline-block;
     text-align: right;
     position: static;
     width: 73%;
     float: right;
-    padding-top: 5px;
-    padding-right: 10px;
+    padding-top: 0px;
+    padding-right: 1px;
   }
 }
 
