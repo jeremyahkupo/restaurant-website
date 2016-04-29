@@ -32,17 +32,21 @@ header {
 .header-list {
   text-align: center;
   padding-right: 2rem;
-  line-height: 200%;
+  line-height: 250%;
 }
 
 .header-list a:hover {
   color: #fff;
   background-color: #697754;
+  text-align: center;
+  left: 50px;
+  right: 50px
 }
 
 .header-list-nav {
   list-style-type: none;
   display: none;
+  position: relative;
 }
 
 .nav-check {
@@ -68,10 +72,17 @@ header {
 .nav-close {
   display: block;
   width: 100%;
+  position: static;
+  clear: both;
+}
+
+.nav-open {
+  position: relative;
 }
 
 .nav-close {
   display: none;
+  position: relative;
 }
 
 .nav-check:checked ~ .nav-label .nav-open {
@@ -82,12 +93,12 @@ header {
   display: block;
 }
 
-
 h1 {
   font-family: "Pacifico";
   font-size: 1.5rem;
   text-align: center;
   color: #fff;
+  left: 10;
 }
 
 .img-logo {
@@ -390,6 +401,14 @@ footer {
     line-height: 1.4;
   }
 
+  header {
+    position: relative;
+  }
+
+  .nav-close {
+    display
+  }
+
   .menu-card {
     display: inline;
     width: 50%;
@@ -412,7 +431,7 @@ footer {
   }
 
   h1 {
-    display: inline-block;
+    text-align: center;
     left: 10px;
   }
 
@@ -428,12 +447,10 @@ footer {
 
   .header-list-nav {
     display: inline-block;
-    text-align: right;
     position: static;
     width: 73%;
-    float: right;
-    padding-top: 0px;
-    padding-right: 1px;
+    margin-right: 110px;
+    margin-left: 110px;
   }
 }
 
