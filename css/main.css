@@ -326,20 +326,18 @@ h4 {
 
 .img-review-box {
   position: absolute;
-  top: 28px;
-  right: 0;
-  width: 50%;
+  margin-left: 40px;
 }
 
 .review-sec {
   clear: both;
 }
 
-
 .img-review-box {
-  width: 70%;
-  top: 57px;
-  left: 10px;
+  position: absolute;
+  top: 118px;
+  right: 0;
+  width: 60%;
 }
 
 .location-section {
@@ -447,10 +445,9 @@ footer {
 
   .header-list-nav {
     display: inline-block;
-    position: static;
     width: 73%;
-    margin-right: 110px;
-    margin-left: 110px;
+    margin-right: 95px;
+    margin-left: 95px;
   }
 }
 
